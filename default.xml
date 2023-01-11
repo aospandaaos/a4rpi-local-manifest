@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="a4rpi" fetch="https://github.com/aospandaaos" />
+  <remote name="arpi" fetch="https://github.com/android-rpi"/>
+  
+  <project path="device/a4rpi/rpi4" name="a4rpi-device" revision="android13" remote="a4rpi"/>
+  <project path="scripts" name="a4rpi-scripts" revision="android13" remote="a4rpi"/>
+
+  <remove-project name="platform/external/mesa3d"/>
+  <project path="external/mesa3d" name="external_mesa3d" revision="v3d-22.2" remote="arpi"/>
+</manifest>
+
